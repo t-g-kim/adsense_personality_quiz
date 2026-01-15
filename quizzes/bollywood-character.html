@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Which Bollywood Character Are You? | Personality Quiz</title>
+    <meta name="description" content="Find out which iconic Bollywood character matches your personality! Are you Shah Rukh Khan's romantic hero, Salman Khan's action star, or someone else? Take this fun quiz now!">
+    <meta name="keywords" content="bollywood quiz, which bollywood character are you, personality quiz india, shah rukh khan quiz, salman khan quiz, bollywood personality test">
+    <meta name="author" content="Personality Quiz Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://personality-quiz-hub.pages.dev/quizzes/bollywood-character.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://personality-quiz-hub.pages.dev/quizzes/bollywood-character.html">
+    <meta property="og:title" content="Which Bollywood Character Are You? Take This Quiz!">
+    <meta property="og:description" content="Discover your Bollywood character match! Are you the romantic hero, action star, or versatile actor? Find out now!">
+    <meta property="og:image" content="https://personality-quiz-hub.pages.dev/images/bollywood-quiz-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://personality-quiz-hub.pages.dev/quizzes/bollywood-character.html">
+    <meta property="twitter:title" content="Which Bollywood Character Are You?">
+    <meta property="twitter:description" content="Discover your Bollywood character match! Take this fun personality quiz now!">
+    <meta property="twitter:image" content="https://personality-quiz-hub.pages.dev/images/bollywood-quiz-og.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6690487239486575"
+     crossorigin="anonymous"></script>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "Which Bollywood Character Are You?",
+      "description": "A fun personality quiz to discover which iconic Bollywood character matches your personality",
+      "image": "https://personality-quiz-hub.pages.dev/images/bollywood-quiz-og.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Personality Quiz Hub"
+      },
+      "educationalUse": "Entertainment",
+      "timeRequired": "PT2M"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6690487239486575"
+             data-ad-slot="1234567893"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1>🎬 Which Bollywood Character Are You?</h1>
+            <p>Answer 12 questions to discover your Bollywood character match!</p>
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Question Container (Dynamic) -->
+        <div id="question-container"></div>
+
+        <!-- Ad in the middle -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6690487239486575"
+                 data-ad-slot="1234567894"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6690487239486575"
+             data-ad-slot="1234567895"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+    
+    <!-- Quiz Data & Logic -->
+    <script>
+        const quizData = {
+            title: "Which Bollywood Character Are You?",
+            questions: [
+                {
+                    question: "How do you approach love and relationships?",
+                    options: [
+                        { text: "I'm a hopeless romantic who believes in true love", value: "romantic", emoji: "💕" },
+                        { text: "I'm protective and passionate about my loved ones", value: "action", emoji: "💪" },
+                        { text: "I'm practical and thoughtful in relationships", value: "versatile", emoji: "🤔" },
+                        { text: "I'm charming and enjoy flirting", value: "charmer", emoji: "😎" }
+                    ]
+                },
+                {
+                    question: "What's your ideal weekend activity?",
+                    options: [
+                        { text: "Watching romantic movies or going on dates", value: "romantic", emoji: "🎬" },
+                        { text: "Hitting the gym or outdoor adventures", value: "action", emoji: "🏋️" },
+                        { text: "Reading books or attending cultural events", value: "versatile", emoji: "📚" },
+                        { text: "Partying with friends and socializing", value: "charmer", emoji: "🎉" }
+                    ]
+                },
+                {
+                    question: "How do you handle conflicts?",
+                    options: [
+                        { text: "I try to resolve them with words and emotions", value: "romantic", emoji: "💬" },
+                        { text: "I face them head-on, no matter what", value: "action", emoji: "⚔️" },
+                        { text: "I analyze the situation and find smart solutions", value: "versatile", emoji: "🧠" },
+                        { text: "I use humor and charm to defuse tension", value: "charmer", emoji: "😄" }
+                    ]
+                },
+                {
+                    question: "What's your fashion style?",
+                    options: [
+                        { text: "Classic and elegant, like suits or sarees", value: "romantic", emoji: "👔" },
+                        { text: "Casual and comfortable, often athletic wear", value: "action", emoji: "👕" },
+                        { text: "Versatile - I can dress up or down", value: "versatile", emoji: "🎭" },
+                        { text: "Trendy and stylish, always following fashion", value: "charmer", emoji: "👗" }
+                    ]
+                },
+                {
+                    question: "What's your greatest strength?",
+                    options: [
+                        { text: "My emotional depth and expressiveness", value: "romantic", emoji: "❤️" },
+                        { text: "My physical strength and determination", value: "action", emoji: "💯" },
+                        { text: "My intelligence and adaptability", value: "versatile", emoji: "🎓" },
+                        { text: "My social skills and charisma", value: "charmer", emoji: "✨" }
+                    ]
+                },
+                {
+                    question: "How do your friends describe you?",
+                    options: [
+                        { text: "Sweet, caring, and emotional", value: "romantic", emoji: "🌹" },
+                        { text: "Strong, loyal, and protective", value: "action", emoji: "🛡️" },
+                        { text: "Smart, thoughtful, and reliable", value: "versatile", emoji: "🎯" },
+                        { text: "Fun, outgoing, and entertaining", value: "charmer", emoji: "🌟" }
+                    ]
+                },
+                {
+                    question: "What's your dream career?",
+                    options: [
+                        { text: "Artist, musician, or something creative", value: "romantic", emoji: "🎨" },
+                        { text: "Athlete, soldier, or security professional", value: "action", emoji: "⚡" },
+                        { text: "Doctor, engineer, or academic", value: "versatile", emoji: "🔬" },
+                        { text: "Entertainer, salesperson, or public figure", value: "charmer", emoji: "🎤" }
+                    ]
+                },
+                {
+                    question: "How do you celebrate success?",
+                    options: [
+                        { text: "With my loved ones in an intimate setting", value: "romantic", emoji: "🥂" },
+                        { text: "By setting bigger goals and challenges", value: "action", emoji: "🏆" },
+                        { text: "By reflecting on what I learned", value: "versatile", emoji: "📖" },
+                        { text: "By throwing a big party!", value: "charmer", emoji: "🎊" }
+                    ]
+                },
+                {
+                    question: "What's your favorite type of music?",
+                    options: [
+                        { text: "Romantic ballads and love songs", value: "romantic", emoji: "🎵" },
+                        { text: "Energetic beats and workout music", value: "action", emoji: "🎸" },
+                        { text: "Classical or soulful melodies", value: "versatile", emoji: "🎹" },
+                        { text: "Party anthems and dance music", value: "charmer", emoji: "🎧" }
+                    ]
+                },
+                {
+                    question: "How do you deal with failure?",
+                    options: [
+                        { text: "I get emotional but find comfort in loved ones", value: "romantic", emoji: "😢" },
+                        { text: "I come back stronger and never give up", value: "action", emoji: "🔥" },
+                        { text: "I analyze what went wrong and improve", value: "versatile", emoji: "📊" },
+                        { text: "I laugh it off and move on quickly", value: "charmer", emoji: "😅" }
+                    ]
+                },
+                {
+                    question: "What's your idea of the perfect date?",
+                    options: [
+                        { text: "Candlelit dinner and watching sunset", value: "romantic", emoji: "🌅" },
+                        { text: "Adventure activities like trekking or sports", value: "action", emoji: "🏔️" },
+                        { text: "Museum visit or intellectual conversation", value: "versatile", emoji: "🏛️" },
+                        { text: "Live music, dancing, and vibrant atmosphere", value: "charmer", emoji: "💃" }
+                    ]
+                },
+                {
+                    question: "If you could have a superpower, what would it be?",
+                    options: [
+                        { text: "The power to make everyone happy", value: "romantic", emoji: "😊" },
+                        { text: "Super strength or invincibility", value: "action", emoji: "💪" },
+                        { text: "Super intelligence or mind reading", value: "versatile", emoji: "🧠" },
+                        { text: "The power of persuasion", value: "charmer", emoji: "🗣️" }
+                    ]
+                }
+            ],
+            results: {
+                romantic: {
+                    emoji: "👨‍❤️‍💋‍👨",
+                    title: "The Romantic Hero (Shah Rukh Khan Style)",
+                    subtitle: "You're the king of romance!",
+                    description: "You have the heart of a true romantic, just like Shah Rukh Khan's iconic characters. You believe in love at first sight, grand gestures, and happily ever afters. Your emotional depth and expressiveness make you incredibly charismatic. You wear your heart on your sleeve and aren't afraid to show your feelings. Whether it's Raj from DDLJ or Rahul from KKHH, you embody the classic Bollywood romantic hero who sweeps people off their feet with charm and sincerity.",
+                    traits: {
+                        "Romance Level": "❤️❤️❤️❤️❤️",
+                        "Emotional IQ": "⭐⭐⭐⭐⭐",
+                        "Charm Factor": "💯/100",
+                        "Signature Move": "Arms spread wide"
+                    }
+                },
+                action: {
+                    emoji: "💪",
+                    title: "The Action Hero (Salman Khan Style)",
+                    subtitle: "You're the ultimate protector!",
+                    description: "You're strong, loyal, and always ready to stand up for what's right, just like Salman Khan's powerful characters. You have a heart of gold beneath that tough exterior. Family and friends can always count on you to have their back. You face challenges head-on and never back down from a fight. Whether it's Tiger from the Tiger series or Prem from Maine Pyar Kiya, you combine strength with a big heart. Your physical presence and protective nature make you the hero everyone needs.",
+                    traits: {
+                        "Strength": "💪💪💪💪💪",
+                        "Loyalty": "⭐⭐⭐⭐⭐",
+                        "Bravery": "💯/100",
+                        "Signature Move": "Ripping shirt off"
+                    }
+                },
+                versatile: {
+                    emoji: "🎭",
+                    title: "The Versatile Genius (Aamir Khan Style)",
+                    subtitle: "You're the perfectionist!",
+                    description: "You're intelligent, thoughtful, and incredibly versatile, just like Aamir Khan's diverse roles. You think before you act and always strive for excellence. Your perfectionist nature means you give 110% to everything you do. You're not just book-smart but also street-smart, able to adapt to any situation. Whether it's the revolutionary from Lagaan or the teacher from Taare Zameen Par, you bring depth and authenticity to everything. Your ability to transform and your dedication inspire everyone around you.",
+                    traits: {
+                        "Intelligence": "🧠🧠🧠🧠🧠",
+                        "Versatility": "⭐⭐⭐⭐⭐",
+                        "Dedication": "💯/100",
+                        "Signature Trait": "Perfectionism"
+                    }
+                },
+                charmer: {
+                    emoji: "😎",
+                    title: "The Charming Entertainer (Ranveer Singh Style)",
+                    subtitle: "You're the life of the party!",
+                    description: "You're charismatic, energetic, and absolutely irresistible, just like Ranveer Singh's vibrant personality. You light up every room you enter and have an infectious enthusiasm for life. Your confidence and humor make you instantly likable. You're not afraid to be yourself and express your unique style. Whether it's the rapper from Gully Boy or the lover from Bajirao Mastani, you bring energy and entertainment wherever you go. Your ability to connect with people and make them smile is your superpower.",
+                    traits: {
+                        "Charisma": "✨✨✨✨✨",
+                        "Energy": "⚡⚡⚡⚡⚡",
+                        "Confidence": "💯/100",
+                        "Signature Trait": "Infectious enthusiasm"
+                    }
+                }
+            }
+        };
+
+        // Initialize quiz
+        const quiz = new QuizEngine(quizData);
+        quiz.start();
+
+        // Track quiz start
+        trackQuizStart(quizData.title);
+    </script>
+</body>
+</html>

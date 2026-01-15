@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ideal Indian City | Personality Quiz</title>
+    <meta name="description" content="Should you live in Mumbai, Delhi, Bangalore, or Goa? Find your perfect Indian city match with this fun personality quiz!">
+    <link rel="canonical" href="https://personality-quiz-hub.pages.dev/quizzes/ideal-city.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6690487239486575" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>🏙️ Your Ideal Indian City</h1>
+            <p>Answer 10 questions to find where you truly belong!</p>
+            <div class="quiz-progress"><div class="quiz-progress-bar"></div></div>
+        </div>
+        <div id="question-container"></div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        const quizData = {
+            title: "Your Ideal Indian City",
+            questions: [
+                { question: "What's your ideal pace of life?", options: [
+                    { text: "Fast-paced and always hustling", value: "mumbai", emoji: "⚡" },
+                    { text: "Balanced work and cultural life", value: "delhi", emoji: "⚖️" },
+                    { text: "Tech-savvy and modern", value: "bangalore", emoji: "💻" },
+                    { text: "Relaxed and laid-back", value: "goa", emoji: "🏖️" }
+                ]},
+                { question: "How do you spend weekends?", options: [
+                    { text: "Working or networking", value: "mumbai", emoji: "💼" },
+                    { text: "Exploring historical places", value: "delhi", emoji: "🏛️" },
+                    { text: "Cafes and tech meetups", value: "bangalore", emoji: "☕" },
+                    { text: "Beach and nature", value: "goa", emoji: "🌊" }
+                ]},
+                { question: "What's your career focus?", options: [
+                    { text: "Finance and entertainment", value: "mumbai", emoji: "🎬" },
+                    { text: "Government and politics", value: "delhi", emoji: "🏢" },
+                    { text: "Tech and startups", value: "bangalore", emoji: "🚀" },
+                    { text: "Hospitality and creativity", value: "goa", emoji: "🎨" }
+                ]},
+                { question: "What weather do you prefer?", options: [
+                    { text: "Humid and coastal", value: "mumbai", emoji: "🌴" },
+                    { text: "Extreme hot and cold", value: "delhi", emoji: "❄️🔥" },
+                    { text: "Pleasant and moderate", value: "bangalore", emoji: "🌤️" },
+                    { text: "Tropical and sunny", value: "goa", emoji: "☀️" }
+                ]},
+                { question: "How important is nightlife?", options: [
+                    { text: "Very important, city never sleeps!", value: "mumbai", emoji: "🌃" },
+                    { text: "Moderate, enjoy parties occasionally", value: "delhi", emoji: "🎉" },
+                    { text: "Prefer pubs and live music", value: "bangalore", emoji: "🎵" },
+                    { text: "Beach parties and trance!", value: "goa", emoji: "🎧" }
+                ]},
+                { question: "What's your food preference?", options: [
+                    { text: "Street food and diverse cuisines", value: "mumbai", emoji: "🌮" },
+                    { text: "Rich Mughlai and traditional", value: "delhi", emoji: "🍖" },
+                    { text: "South Indian and international", value: "bangalore", emoji: "🍽️" },
+                    { text: "Seafood and Portuguese", value: "goa", emoji: "🦐" }
+                ]},
+                { question: "How do you commute?", options: [
+                    { text: "Local trains and hustle", value: "mumbai", emoji: "🚊" },
+                    { text: "Metro and autos", value: "delhi", emoji: "🚇" },
+                    { text: "Cabs and bikes", value: "bangalore", emoji: "🏍️" },
+                    { text: "Scooters and walking", value: "goa", emoji: "🛵" }
+                ]},
+                { question: "What's your social style?", options: [
+                    { text: "Ambitious and networking", value: "mumbai", emoji: "🤝" },
+                    { text: "Political and well-connected", value: "delhi", emoji: "👔" },
+                    { text: "Intellectual and tech-focused", value: "bangalore", emoji: "🤓" },
+                    { text: "Free-spirited and bohemian", value: "goa", emoji: "🕊️" }
+                ]},
+                { question: "What's your housing priority?", options: [
+                    { text: "Close to work, doesn't matter how small", value: "mumbai", emoji: "🏢" },
+                    { text: "Spacious and well-located", value: "delhi", emoji: "🏘️" },
+                    { text: "Modern amenities and internet", value: "bangalore", emoji: "🏠" },
+                    { text: "Close to beach with a view", value: "goa", emoji: "🏖️" }
+                ]},
+                { question: "What defines home for you?", options: [
+                    { text: "Opportunities and dreams", value: "mumbai", emoji: "💫" },
+                    { text: "Power and influence", value: "delhi", emoji: "👑" },
+                    { text: "Innovation and growth", value: "bangalore", emoji: "🌱" },
+                    { text: "Peace and freedom", value: "goa", emoji: "🕊️" }
+                ]}
+            ],
+            results: {
+                mumbai: { emoji: "🏙️", title: "Mumbai - The City of Dreams", subtitle: "Maximum City awaits you!", description: "Mumbai is your perfect match! You thrive in fast-paced environments and love the hustle. This city rewards hard work and ambition. From Bollywood to business, Mumbai offers unlimited opportunities. The local trains, street food, and never-sleep attitude match your energy perfectly!", traits: { "Pace": "⚡⚡⚡⚡⚡", "Opportunities": "💯/100", "Spirit": "Never Give Up", "Famous For": "Bollywood & Finance" }},
+                delhi: { emoji: "🏛️", title: "Delhi - The Heart of India", subtitle: "Dilli Dil Walon Ki!", description: "Delhi is your city! You appreciate history, culture, and power. You enjoy the best of both traditional and modern India. From historical monuments to political power centers, Delhi offers a unique blend. The food, the culture, and the spirit of Delhi match your personality!", traits: { "Culture": "⭐⭐⭐⭐⭐", "History": "Ancient & Modern", "Spirit": "Dilliwalon ki", "Famous For": "Politics & Heritage" }},
+                bangalore: { emoji: "💻", title: "Bangalore - The Silicon Valley of India", subtitle: "India's Tech Capital!", description: "Bangalore is calling you! You're tech-savvy, progressive, and love pleasant weather. You thrive in startup culture and innovation. From tech parks to cafes, Bangalore offers the perfect ecosystem for growth. The cosmopolitan culture and moderate climate are perfect for you!", traits: { "Innovation": "🚀🚀🚀🚀🚀", "Weather": "Perfect ☁️", "Spirit": "Namma Bengaluru", "Famous For": "IT & Startups" }},
+                goa: { emoji: "🏖️", title: "Goa - The Beach Paradise", subtitle: "Susegad Life!", description: "Goa is your paradise! You value peace, freedom, and a relaxed lifestyle. You prefer beaches over buildings and parties over boardrooms. From Portuguese heritage to beach shacks, Goa offers the perfect escape. The laid-back Susegad life and beautiful beaches are your calling!", traits: { "Relaxation": "🌊🌊🌊🌊🌊", "Beaches": "Best in India", "Spirit": "Susegad", "Famous For": "Beaches & Freedom" }}
+            }
+        };
+        const quiz = new QuizEngine(quizData);
+        quiz.start();
+    </script>
+</body>
+</html>

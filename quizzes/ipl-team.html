@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Which IPL Team Should You Support? | Cricket Quiz</title>
+    <meta name="description" content="Find your perfect IPL team match! Mumbai Indians, CSK, RCB, or KKR? Take this personality quiz and discover which IPL team you should support!">
+    <meta name="keywords" content="ipl quiz, cricket quiz india, which ipl team quiz, mumbai indians, csk quiz, rcb quiz, kkr quiz, ipl personality test">
+    <meta name="author" content="Personality Quiz Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://personality-quiz-hub.pages.dev/quizzes/ipl-team.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://personality-quiz-hub.pages.dev/quizzes/ipl-team.html">
+    <meta property="og:title" content="Which IPL Team Should You Support?">
+    <meta property="og:description" content="Find your perfect IPL team match based on your personality! Mumbai Indians, CSK, RCB, or KKR?">
+    <meta property="og:image" content="https://personality-quiz-hub.pages.dev/images/ipl-quiz-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://personality-quiz-hub.pages.dev/quizzes/ipl-team.html">
+    <meta property="twitter:title" content="Which IPL Team Should You Support?">
+    <meta property="twitter:description" content="Take the quiz and find your IPL team twin!">
+    <meta property="twitter:image" content="https://personality-quiz-hub.pages.dev/images/ipl-quiz-og.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6690487239486575"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6690487239486575"
+             data-ad-slot="1234567899"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1>🏏 Which IPL Team Should You Support?</h1>
+            <p>Answer 8 questions to find your perfect IPL match!</p>
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Question Container (Dynamic) -->
+        <div id="question-container"></div>
+
+        <!-- Ad in the middle -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6690487239486575"
+                 data-ad-slot="2234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6690487239486575"
+             data-ad-slot="2234567891"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+    
+    <!-- Quiz Data & Logic -->
+    <script>
+        const quizData = {
+            title: "Which IPL Team Should You Support?",
+            questions: [
+                {
+                    question: "What's your approach to challenges?",
+                    options: [
+                        { text: "I stay calm and trust in experience", value: "csk", emoji: "🧘" },
+                        { text: "I attack aggressively and go for the win", value: "rcb", emoji: "⚔️" },
+                        { text: "I adapt and use smart strategies", value: "kkr", emoji: "🧠" },
+                        { text: "I rely on teamwork and consistency", value: "mi", emoji: "🤝" }
+                    ]
+                },
+                {
+                    question: "How do you handle pressure situations?",
+                    options: [
+                        { text: "Experience guides me through", value: "csk", emoji: "🎯" },
+                        { text: "I take bold risks", value: "rcb", emoji: "🎲" },
+                        { text: "I think strategically", value: "kkr", emoji: "♟️" },
+                        { text: "I trust the process", value: "mi", emoji: "💪" }
+                    ]
+                },
+                {
+                    question: "What's your leadership style?",
+                    options: [
+                        { text: "Calm, experienced, and trustworthy", value: "csk", emoji: "👑" },
+                        { text: "Passionate and energetic", value: "rcb", emoji: "🔥" },
+                        { text: "Smart and tactical", value: "kkr", emoji: "🎭" },
+                        { text: "Professional and systematic", value: "mi", emoji: "📊" }
+                    ]
+                },
+                {
+                    question: "Pick a color that resonates with you:",
+                    options: [
+                        { text: "Yellow - Bright and energetic", value: "csk", emoji: "💛" },
+                        { text: "Red - Bold and passionate", value: "rcb", emoji: "❤️" },
+                        { text: "Purple - Royal and mysterious", value: "kkr", emoji: "💜" },
+                        { text: "Blue - Calm and professional", value: "mi", emoji: "💙" }
+                    ]
+                },
+                {
+                    question: "What's your idea of success?",
+                    options: [
+                        { text: "Consistent performance over many years", value: "csk", emoji: "📈" },
+                        { text: "Playing with heart, win or lose", value: "rcb", emoji: "💗" },
+                        { text: "Winning through clever strategy", value: "kkr", emoji: "🏆" },
+                        { text: "Building a winning dynasty", value: "mi", emoji: "👑" }
+                    ]
+                },
+                {
+                    question: "How do your friends describe you?",
+                    options: [
+                        { text: "Reliable and experienced", value: "csk", emoji: "🛡️" },
+                        { text: "Exciting and entertaining", value: "rcb", emoji: "🎪" },
+                        { text: "Intelligent and unpredictable", value: "kkr", emoji: "🎩" },
+                        { text: "Professional and successful", value: "mi", emoji: "💼" }
+                    ]
+                },
+                {
+                    question: "What's your greatest strength?",
+                    options: [
+                        { text: "Experience and calmness", value: "csk", emoji: "🧘‍♂️" },
+                        { text: "Passion and determination", value: "rcb", emoji: "💥" },
+                        { text: "Strategy and adaptability", value: "kkr", emoji: "🦊" },
+                        { text: "Teamwork and organization", value: "mi", emoji: "⚙️" }
+                    ]
+                },
+                {
+                    question: "Pick your dream cricket moment:",
+                    options: [
+                        { text: "Winning with cool-headed brilliance", value: "csk", emoji: "😎" },
+                        { text: "A thrilling last-ball finish", value: "rcb", emoji: "⚡" },
+                        { text: "Outsmarting the opposition", value: "kkr", emoji: "🎯" },
+                        { text: "Dominating the tournament", value: "mi", emoji: "🏅" }
+                    ]
+                }
+            ],
+            results: {
+                csk: {
+                    emoji: "💛",
+                    title: "Chennai Super Kings",
+                    subtitle: "Whistle Podu! 🦁",
+                    description: "You're a Chennai Super Kings fan at heart! Like CSK, you value experience, consistency, and the wisdom that comes with time. You're calm under pressure and trust in tried-and-tested methods. Just like MS Dhoni's captaincy, you lead with a cool head and make smart decisions. You believe in loyalty and sticking with your team through thick and thin. The yellow brigade represents everything you stand for - patience, experience, and an unshakeable belief that form is temporary, but class is permanent. Thala for a reason!",
+                    traits: {
+                        "IPL Titles": "5 🏆🏆🏆🏆🏆",
+                        "Captain Cool": "MS Dhoni 💛",
+                        "Team Color": "Yellow 💛",
+                        "Home Ground": "Chepauk, Chennai"
+                    }
+                },
+                rcb: {
+                    emoji: "❤️",
+                    title: "Royal Challengers Bangalore",
+                    subtitle: "Ee Sala Cup Namde! 🔴",
+                    description: "You're a Royal Challengers Bangalore supporter! Like RCB, you play with passion and never give up, even when the odds are against you. You're bold, exciting, and always go for the win. Just like Virat Kohli's aggressive batting, you approach life with intensity and determination. You might not always win, but you always entertain and never back down from a challenge. You believe in playing with heart, and that's what makes you special. Your loyalty is unmatched - you stick with your team through every heartbreak, always believing that next year is YOUR year!",
+                    traits: {
+                        "IPL Titles": "Still waiting... 💔",
+                        "Team Spirit": "Never Give Up ❤️",
+                        "Team Color": "Red & Gold",
+                        "Home Ground": "Chinnaswamy, Bangalore"
+                    }
+                },
+                kkr: {
+                    emoji: "💜",
+                    title: "Kolkata Knight Riders",
+                    subtitle: "Korbo Lorbo Jeetbo! 👑",
+                    description: "You're a Kolkata Knight Riders enthusiast! Like KKR, you're intelligent, strategic, and love to surprise people. You adapt to situations quickly and aren't afraid to try unconventional approaches. Just like the Knight Riders' tactical gameplay, you think several steps ahead and outmaneuver your competition. You have a royal demeanor but aren't afraid to get your hands dirty when needed. You believe in smart work over hard work and love proving people wrong with your clever strategies. The purple and gold perfectly represent your regal yet mysterious personality!",
+                    traits: {
+                        "IPL Titles": "3 🏆🏆🏆",
+                        "Mystery Factor": "Unpredictable 💜",
+                        "Team Color": "Purple & Gold",
+                        "Home Ground": "Eden Gardens, Kolkata"
+                    }
+                },
+                mi: {
+                    emoji: "💙",
+                    title: "Mumbai Indians",
+                    subtitle: "Duniya Hila Denge Hum! 💙",
+                    description: "You're a Mumbai Indians fan through and through! Like MI, you're a winner who believes in systematic excellence and building dynasties. You value professionalism, teamwork, and consistent performance. Just like Mumbai Indians' record-breaking success, you set high standards and achieve them through hard work and smart planning. You're the most successful when it matters, showing up in crucial moments. You believe in the power of teamwork and know that individual brilliance is great, but team success is greater. Your blue army mentality makes you a champion in whatever you do!",
+                    traits: {
+                        "IPL Titles": "5 🏆🏆🏆🏆🏆",
+                        "Most Successful": "Champions 💙",
+                        "Team Color": "Blue & Gold",
+                        "Home Ground": "Wankhede, Mumbai"
+                    }
+                }
+            }
+        };
+
+        // Initialize quiz
+        const quiz = new QuizEngine(quizData);
+        quiz.start();
+
+        // Track quiz start
+        trackQuizStart(quizData.title);
+    </script>
+</body>
+</html>

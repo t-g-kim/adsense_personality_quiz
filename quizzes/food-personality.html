@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>What's Your Indian Food Personality? | Fun Food Quiz</title>
+    <meta name="description" content="Discover which Indian food matches your personality! Are you spicy Biryani, comforting Dal, crispy Dosa, or sweet Gulab Jamun? Take this delicious quiz now!">
+    <meta name="keywords" content="indian food quiz, food personality test, biryani quiz, dosa quiz, indian cuisine quiz, food personality india">
+    <meta name="author" content="Personality Quiz Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://personality-quiz-hub.pages.dev/quizzes/food-personality.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://personality-quiz-hub.pages.dev/quizzes/food-personality.html">
+    <meta property="og:title" content="What's Your Indian Food Personality?">
+    <meta property="og:description" content="Find out which delicious Indian dish matches your personality! Spicy, sweet, or savory?">
+    <meta property="og:image" content="https://personality-quiz-hub.pages.dev/images/food-quiz-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://personality-quiz-hub.pages.dev/quizzes/food-personality.html">
+    <meta property="twitter:title" content="What's Your Indian Food Personality?">
+    <meta property="twitter:description" content="Discover your Indian food twin! Take this fun quiz now!">
+    <meta property="twitter:image" content="https://personality-quiz-hub.pages.dev/images/food-quiz-og.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6690487239486575"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6690487239486575"
+             data-ad-slot="1234567896"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1>🍛 What's Your Indian Food Personality?</h1>
+            <p>Answer 10 questions to discover your delicious food twin!</p>
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Question Container (Dynamic) -->
+        <div id="question-container"></div>
+
+        <!-- Ad in the middle -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6690487239486575"
+                 data-ad-slot="1234567897"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6690487239486575"
+             data-ad-slot="1234567898"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+    
+    <!-- Quiz Data & Logic -->
+    <script>
+        const quizData = {
+            title: "What's Your Indian Food Personality?",
+            questions: [
+                {
+                    question: "How would you describe your personality?",
+                    options: [
+                        { text: "Bold and exciting", value: "biryani", emoji: "🔥" },
+                        { text: "Warm and comforting", value: "dal", emoji: "🤗" },
+                        { text: "Light and crispy", value: "dosa", emoji: "✨" },
+                        { text: "Sweet and delightful", value: "gulab", emoji: "💕" }
+                    ]
+                },
+                {
+                    question: "What's your ideal Saturday night?",
+                    options: [
+                        { text: "Exciting adventure or party", value: "biryani", emoji: "🎉" },
+                        { text: "Cozy night at home with loved ones", value: "dal", emoji: "🏠" },
+                        { text: "Quick hangout with close friends", value: "dosa", emoji: "☕" },
+                        { text: "Romantic date or special celebration", value: "gulab", emoji: "💑" }
+                    ]
+                },
+                {
+                    question: "How do you handle stress?",
+                    options: [
+                        { text: "I face it head-on with intensity", value: "biryani", emoji: "💪" },
+                        { text: "I seek comfort and support", value: "dal", emoji: "🫂" },
+                        { text: "I take quick, practical steps", value: "dosa", emoji: "⚡" },
+                        { text: "I treat myself to something nice", value: "gulab", emoji: "🍰" }
+                    ]
+                },
+                {
+                    question: "What's your fashion style?",
+                    options: [
+                        { text: "Bold colors and statement pieces", value: "biryani", emoji: "👗" },
+                        { text: "Classic, comfortable, and reliable", value: "dal", emoji: "👔" },
+                        { text: "Simple, clean, and versatile", value: "dosa", emoji: "👕" },
+                        { text: "Elegant and eye-catching", value: "gulab", emoji: "💃" }
+                    ]
+                },
+                {
+                    question: "How do people see you?",
+                    options: [
+                        { text: "Exciting and full of flavor", value: "biryani", emoji: "🌶️" },
+                        { text: "Dependable and nurturing", value: "dal", emoji: "❤️" },
+                        { text: "Versatile and easy-going", value: "dosa", emoji: "😊" },
+                        { text: "Special and memorable", value: "gulab", emoji: "⭐" }
+                    ]
+                },
+                {
+                    question: "What's your morning routine like?",
+                    options: [
+                        { text: "Energetic workout and big breakfast", value: "biryani", emoji: "🏃" },
+                        { text: "Slow start with tea and family time", value: "dal", emoji: "☕" },
+                        { text: "Quick shower and grab-and-go", value: "dosa", emoji: "⏰" },
+                        { text: "Leisurely breakfast and self-care", value: "gulab", emoji: "🛁" }
+                    ]
+                },
+                {
+                    question: "What's your dream vacation?",
+                    options: [
+                        { text: "Adventurous trip to exotic places", value: "biryani", emoji: "🗺️" },
+                        { text: "Peaceful retreat in the mountains", value: "dal", emoji: "⛰️" },
+                        { text: "Quick city break with sightseeing", value: "dosa", emoji: "🏙️" },
+                        { text: "Romantic beach resort", value: "gulab", emoji: "🏖️" }
+                    ]
+                },
+                {
+                    question: "How do you celebrate success?",
+                    options: [
+                        { text: "Throw a big party!", value: "biryani", emoji: "🎊" },
+                        { text: "Share it with family over a meal", value: "dal", emoji: "🍽️" },
+                        { text: "Move on to the next goal", value: "dosa", emoji: "🎯" },
+                        { text: "Treat myself to something special", value: "gulab", emoji: "🎁" }
+                    ]
+                },
+                {
+                    question: "What's your love language?",
+                    options: [
+                        { text: "Grand gestures and passion", value: "biryani", emoji: "💐" },
+                        { text: "Acts of service and quality time", value: "dal", emoji: "🤝" },
+                        { text: "Honest communication", value: "dosa", emoji: "💬" },
+                        { text: "Words of affirmation and gifts", value: "gulab", emoji: "💝" }
+                    ]
+                },
+                {
+                    question: "Pick a word that describes you best:",
+                    options: [
+                        { text: "Spicy", value: "biryani", emoji: "🌶️" },
+                        { text: "Wholesome", value: "dal", emoji: "🌾" },
+                        { text: "Versatile", value: "dosa", emoji: "🔄" },
+                        { text: "Sweet", value: "gulab", emoji: "🍯" }
+                    ]
+                }
+            ],
+            results: {
+                biryani: {
+                    emoji: "🍛",
+                    title: "You're Biryani!",
+                    subtitle: "Bold, exciting, and full of flavor!",
+                    description: "Just like the king of Indian dishes - Biryani, you're bold, exciting, and absolutely unforgettable! You bring spice and excitement to everything you do. People are drawn to your vibrant personality and your ability to turn any ordinary moment into something special. You're a perfect blend of different qualities, just like the layers in a biryani. Whether it's Hyderabadi, Lucknowi, or Kolkata style, you know how to stand out in a crowd. Your life is full of flavor, and you wouldn't have it any other way!",
+                    traits: {
+                        "Spice Level": "🌶️🌶️🌶️🌶️🌶️",
+                        "Complexity": "⭐⭐⭐⭐⭐",
+                        "Popularity": "💯/100",
+                        "Best Served": "With raita & friends"
+                    }
+                },
+                dal: {
+                    emoji: "🥘",
+                    title: "You're Dal Chawal!",
+                    subtitle: "Warm, comforting, and essential!",
+                    description: "You're like the comfort food of India - Dal Chawal! You provide warmth and comfort to everyone around you. People can always count on you to be there when they need support. You might not be the flashiest person in the room, but you're absolutely essential. Your dependable nature and nurturing personality make you the foundation that others build upon. Just like how dal chawal is the soul food of millions, you're the emotional anchor for your loved ones. Simple, wholesome, and absolutely irreplaceable!",
+                    traits: {
+                        "Comfort Level": "❤️❤️❤️❤️❤️",
+                        "Reliability": "⭐⭐⭐⭐⭐",
+                        "Warmth": "💯/100",
+                        "Best Served": "With love & ghee"
+                    }
+                },
+                dosa: {
+                    emoji: "🥞",
+                    title: "You're Dosa!",
+                    subtitle: "Crispy, versatile, and always reliable!",
+                    description: "You're like the beloved Dosa - crispy, versatile, and universally loved! You adapt easily to different situations and can fit in anywhere, just like how dosa can be plain, masala, rava, or uttapam. You're quick on your feet and make decisions efficiently. People appreciate your straightforward approach and your ability to deliver consistently. Whether it's breakfast, lunch, or dinner, you're always ready. Your light-hearted nature and practical attitude make you the go-to person when things need to get done quickly and efficiently!",
+                    traits: {
+                        "Versatility": "🔄🔄🔄🔄🔄",
+                        "Adaptability": "⭐⭐⭐⭐⭐",
+                        "Efficiency": "💯/100",
+                        "Best Served": "With sambhar & chutney"
+                    }
+                },
+                gulab: {
+                    emoji: "🍮",
+                    title: "You're Gulab Jamun!",
+                    subtitle: "Sweet, special, and absolutely delightful!",
+                    description: "You're like Gulab Jamun - sweet, special, and saved for the best moments! You bring joy and celebration wherever you go. People look forward to spending time with you because you make every moment feel special. You have a way of brightening even the dullest days. Just like how gulab jamun is the dessert everyone loves, you're the person everyone wants at their celebrations. Your warm, sweet nature and ability to make people feel valued make you truly special. You're not an everyday occurrence - you're a treat that makes life beautiful!",
+                    traits: {
+                        "Sweetness": "💕💕💕💕💕",
+                        "Special Factor": "⭐⭐⭐⭐⭐",
+                        "Joy Quotient": "💯/100",
+                        "Best Served": "With celebrations & love"
+                    }
+                }
+            }
+        };
+
+        // Initialize quiz
+        const quiz = new QuizEngine(quizData);
+        quiz.start();
+
+        // Track quiz start
+        trackQuizStart(quizData.title);
+    </script>
+</body>
+</html>

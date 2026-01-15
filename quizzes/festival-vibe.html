@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Indian Festival Matches Your Vibe? | Quiz</title>
+    <meta name="description" content="Are you colorful like Holi, spiritual like Diwali, or joyful like Eid? Discover which Indian festival matches your personality!">
+    <link rel="canonical" href="https://personality-quiz-hub.pages.dev/quizzes/festival-vibe.html">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6690487239486575" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>🪔 Which Indian Festival Matches Your Vibe?</h1>
+            <p>Answer 10 questions to discover your festival twin!</p>
+            <div class="quiz-progress"><div class="quiz-progress-bar"></div></div>
+        </div>
+        <div id="question-container"></div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        const quizData = {
+            title: "Which Indian Festival Matches Your Vibe?",
+            questions: [
+                { question: "How do you celebrate special occasions?", options: [
+                    { text: "With colors and joy!", value: "holi", emoji: "🎨" },
+                    { text: "With lights and spirituality", value: "diwali", emoji: "🪔" },
+                    { text: "With family and feasts", value: "eid", emoji: "🍽️" },
+                    { text: "With music and dance", value: "navratri", emoji: "💃" }
+                ]},
+                { question: "What's your energy level?", options: [
+                    { text: "Playful and energetic!", value: "holi", emoji: "⚡" },
+                    { text: "Calm and reflective", value: "diwali", emoji: "🕯️" },
+                    { text: "Warm and generous", value: "eid", emoji: "❤️" },
+                    { text: "Vibrant and rhythmic", value: "navratri", emoji: "🎶" }
+                ]},
+                { question: "How do you express happiness?", options: [
+                    { text: "Through fun and mischief", value: "holi", emoji: "😄" },
+                    { text: "Through gratitude and prayers", value: "diwali", emoji: "🙏" },
+                    { text: "Through sharing and giving", value: "eid", emoji: "🎁" },
+                    { text: "Through movement and rhythm", value: "navratri", emoji: "🎵" }
+                ]},
+                { question: "What colors attract you?", options: [
+                    { text: "Rainbow of colors!", value: "holi", emoji: "🌈" },
+                    { text: "Gold and bright lights", value: "diwali", emoji: "✨" },
+                    { text: "Green and white", value: "eid", emoji: "💚" },
+                    { text: "Vibrant traditional colors", value: "navratri", emoji: "💗" }
+                ]},
+                { question: "What's your ideal celebration time?", options: [
+                    { text: "Spring - time of new beginnings", value: "holi", emoji: "🌸" },
+                    { text: "Autumn - festival of lights", value: "diwali", emoji: "🍂" },
+                    { text: "Anytime - month of blessings", value: "eid", emoji: "🌙" },
+                    { text: "Nine nights of dance", value: "navratri", emoji: "🌃" }
+                ]},
+                { question: "How do you spread joy?", options: [
+                    { text: "Through playful surprises", value: "holi", emoji: "🎉" },
+                    { text: "Through meaningful gifts", value: "diwali", emoji: "🎁" },
+                    { text: "Through acts of charity", value: "eid", emoji: "🤝" },
+                    { text: "Through cultural performances", value: "navratri", emoji: "🎭" }
+                ]},
+                { question: "What's your party style?", options: [
+                    { text: "Outdoors and messy fun", value: "holi", emoji: "🎈" },
+                    { text: "Home decorations and sweets", value: "diwali", emoji: "🏡" },
+                    { text: "Family gatherings and food", value: "eid", emoji: "🍲" },
+                    { text: "Dance floor till dawn", value: "navratri", emoji: "🕺" }
+                ]},
+                { question: "What message resonates with you?", options: [
+                    { text: "Love conquers all", value: "holi", emoji: "❤️" },
+                    { text: "Light over darkness", value: "diwali", emoji: "🕯️" },
+                    { text: "Compassion and sharing", value: "eid", emoji: "💖" },
+                    { text: "Divine feminine power", value: "navratri", emoji: "👑" }
+                ]},
+                { question: "What's your social vibe?", options: [
+                    { text: "Breaking barriers, making friends", value: "holi", emoji: "🤝" },
+                    { text: "Family traditions matter", value: "diwali", emoji: "👨‍👩‍👧‍👦" },
+                    { text: "Community and togetherness", value: "eid", emoji: "👥" },
+                    { text: "Cultural celebration and pride", value: "navratri", emoji: "🇯" }
+                ]},
+                { question: "What brings you inner peace?", options: [
+                    { text: "Letting go and having fun", value: "holi", emoji: "😄" },
+                    { text: "Spiritual reflection and prayers", value: "diwali", emoji: "🙏" },
+                    { text: "Gratitude and giving back", value: "eid", emoji: "💝" },
+                    { text: "Devotion through dance", value: "navratri", emoji: "💃" }
+                ]}
+            ],
+            results: {
+                holi: { emoji: "🎨", title: "You're Holi!", subtitle: "The Festival of Colors!", description: "You're full of joy, playfulness, and love! Like Holi, you believe in breaking barriers and spreading happiness. You're not afraid to get a little messy and have fun. Your vibrant personality lights up any room. You celebrate love conquering all and believe in new beginnings. The colors of Holi represent your diverse, joyful spirit!", traits: { "Joy Level": "🌈🌈🌈🌈🌈", "Playfulness": "⭐⭐⭐⭐⭐", "Spirit": "Rang Barse!", "Message": "Love & Unity" }},
+                diwali: { emoji: "🪔", title: "You're Diwali!", subtitle: "The Festival of Lights!", description: "You're spiritual, warm, and illuminating! Like Diwali, you bring light to dark places. You value family traditions and spiritual growth. You believe good always triumphs over evil. Your presence brings hope and positivity. The lights of Diwali represent your ability to brighten others' lives!", traits: { "Spirituality": "🕯️🕯️🕯️🕯️🕯️", "Warmth": "⭐⭐⭐⭐⭐", "Spirit": "Shubh Deepavali!", "Message": "Light over Darkness" }},
+                eid: { emoji: "🌙", title: "You're Eid!", subtitle: "The Festival of Giving!", description: "You're compassionate, generous, and community-oriented! Like Eid, you value sharing blessings with others. You believe in charity and helping those in need. Your heart is full of gratitude and love. You bring people together and spread joy through acts of kindness. Eid's spirit of giving reflects your generous soul!", traits: { "Generosity": "💚💚💚💚💚", "Community": "⭐⭐⭐⭐⭐", "Spirit": "Eid Mubarak!", "Message": "Compassion & Sharing" }},
+                navratri: { emoji: "💃", title: "You're Navratri!", subtitle: "The Festival of Dance!", description: "You're energetic, cultural, and devotional! Like Navratri, you express yourself through rhythm and movement. You honor traditions while embracing modern celebration. Your energy is infectious and your spirit is divine. You believe in the power of devotion through joy. Navratri's nine nights of celebration match your vibrant, continuous energy!", traits: { "Energy": "💃💃💃💃💃", "Culture": "⭐⭐⭐⭐⭐", "Spirit": "Garba Queen!", "Message": "Divine Feminine Power" }}
+            }
+        };
+        const quiz = new QuizEngine(quizData);
+        quiz.start();
+    </script>
+</body>
+</html>
